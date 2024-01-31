@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
+
+:root{
+    --blue: #4036A9;
+    --black: #111729;
+    --lightgray: #CDD5E0;
+    --white: #FFFFFF;
+    --darkwhite: #F8FAFC;
+    --vietnam-font:'Be Vietnam Pro', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url('img/bg-image.svg') no-repeat ;
+    font-family: var(--vietnam-font);
+    background-size: cover;
+    color: var(--white);
+    overflow: auto;
+}
+
+.logo{
+    width: 200px; 
+    padding: 1rem;
+    margin: 1rem 2rem;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
+    margin: auto;
+    padding: 1rem;
+}
+.title , .explain{
+    width: 90%;
+    text-align: center;
+}
+.title{
+    font-size: 64px;
+}
+.explain{
+    font-size: 32px;
+}
+.form{
+    width: 100%;
+    height: auto;
+    margin: 1rem 0;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(148,84,196,0.7);
+    border-radius: 10px;
+}
+.top-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label, input{
+    width: 100%;
+}
+
+button{
+    margin-top: 1rem;
+    color: var(--blue);
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+.container{
+    width: 95%;
+}    
+.title{
+    font-size: 2rem;
+}
+.explain{
+    font-size: .8rem;
+}
+.top-form{
+    grid-template-columns: 1fr;
+    gap: .8rem
+}
+label{
+    font-size: .8rem;
+}
+}

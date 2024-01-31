@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <object data="img/contact-form-icon.svg" type="image/svg+xml" class="logo"></object>
+    <div class="container">
+        <h1 class="title">Interested in our business pricing?</h1>
+        <p class="explain">Fill out the form to view details and we’ll contact you as soon as possible.</p>
+        <form class="form">
+            <div class="top-form">
+                <label for="name">Name
+                    <input type="text" id="name" name="name" placeholder="Ethan Johnson" required>
+                </label>
+                <label for="email">Email
+                    <input type="email" id="email" name="email" placeholder="ethan@johnson.com" required>
+                </label>
+                <label for="size">Company Size
+                    <select name="size" id="size">
+                        <option value="50">Less than 50</option>
+                        <option value="100">between 50 and 100</option>
+                        <option value="150">Morthan 150</option>
+                    </select>
+                </label>
+                <label for="subject">Subject
+                    <select name="subject" id="subject">
+                        <option value="0">Building Landing pages</option>
+                        <option value="1">Building employee pages</option>
+                        <option value="2">another thing</option>
+                    </select>
+                </label>
+            </div>
+            <label for="textarea">Message
+                <textarea name="textarea" id="textarea" rows="8" placeholder="your massage"></textarea>
+            </label>
+            <button>Contact Sales</button>
+        </form>
+    </div>
+</body>
+</html>
